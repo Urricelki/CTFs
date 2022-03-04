@@ -1,0 +1,16 @@
+# Diferentes Shells // Different shells
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+python3 -c 'import pty;pty.spawn("/bin/dash")'
+python3 -c 'import pty;pty.spawn("/bin/sh")'
+python3 -c 'import pty;pty.spawn("/bin/zsh")'
+pty.spawn(\"/bin/sh\")" or "import pty;
+pty.spawn(\"/bin/dash\")" or "import pty;
+pty.spawn(\"/bin/bash\")")
+# Para poder usar Ctrl+C en reverse shell // To use Ctrl+C on reverse shell
+# Una vez iniciada la shell en la misma shell // Once the shell is started in the same shell
+script /dev/null -c bash 
+ctrl+z
+# En la shell originall // In the original shell
+stty raw -echo; fg
+                reset xterm
+                
