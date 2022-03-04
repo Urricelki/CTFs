@@ -1,0 +1,13 @@
+FAST NMAP
+
+sudo nmap -p- -sS -n -vvv -Pn -min-rate 5000 --open xxx.xxx.xxx.xxx
+
+Pasar archivo a base 64 para cuando no puedes editar texto o crear archivos
+
+cat archivo | base64 -w 0; echo
+
+Copiamos el texto lo pegamos en la maquina y ponemos 
+
+| base64 -d > archivo
+
+Generamos el archivo
