@@ -11,3 +11,7 @@ Copiamos el texto lo pegamos en la maquina y ponemos
 | base64 -d > archivo
 
 Generamos el archivo
+
+Enviar archivo si hay un ip tables y estas conectado por ssh
+
+scp -i /home/kali/.ssh/id_rsa linpeas.sh paul@10.10.11.148:.
